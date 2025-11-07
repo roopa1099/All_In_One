@@ -1,4 +1,4 @@
-# Ollana
+# Ollama
 
 1. What is Ollama?
 
