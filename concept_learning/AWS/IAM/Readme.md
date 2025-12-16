@@ -46,3 +46,13 @@ Roles are never directly attached to a user. Permission can eb attached to the u
 1. To management console, Username, psw, MFA
 2. Through API (programmatic access): Access key ID, Secret Access Key
 
+
+3. Identity center provides SSO for both AWS and non AWS resources whereas IAM is limited to aws services
+
+
+## Practical
+1. Created IAM user accounts
+2. Create User group, add one user, attach policy directly
+3. Create a role, add sts assume role for that role to a user. Switch role using url in IAM account
+4. Same for a group
+
