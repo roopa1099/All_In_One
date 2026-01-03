@@ -32,3 +32,11 @@
         - You use a cluster-aware file system (like Oracle RAC) ( A cluster-aware file system knows that multiple servers are using the same disk, i.e. manages concurrency)
 
 13. EC2 itself can have its own temporary storage, but it’s important to understand Instance Store is local storage physically attached to the EC2 server.
+
+14. AMI : Amazon Machine Image : Which OS for EC2, defines configuration of EC2
+15. EC2 Key: Pair :
+16. Inbound-Outbound rules:
+
+17. IAM roles are better than access keys for EC2 because they are temporary, automatically rotated, and cannot be accidentally leaked or reused outside AWS.
+        Access keys are static secrets.
+        Static secrets + servers = eventual security incident.
