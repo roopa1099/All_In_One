@@ -1,0 +1,11 @@
+databaseChangelog:
+  - changeset:
+      id: v1_create_table
+      author: rr
+      labels: table-creation
+      failOnError: true
+      runInTransaction: true
+      changes:
+        -sqlFile:
+          path: ddl/v1_create_table.sql
+          relativeToChangelogFile: true

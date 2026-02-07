@@ -65,12 +65,58 @@ for i in list:
     print(i)
 
 newlist=[]
-for i in list:
-    if str(i).islower():
-        newlist.append(i)
+# for i in list:
+#     if str(i).islower():
+#         newlist.append(i)
 
 
 
 # Remove all the occurrences of "apple" from the list
 for i in range(list.count("apple")):
     list.remove("apple")
+
+
+list1 = [1,2,3]
+tuple1 = (4,5,6)
+set1 = {7,8,9}
+# [],(),{} #empty list, tuple, set
+
+# array is not default type in python we have to import it via numpy
+
+set2= {3,1,2,3,4,2}  #sets dont allow duplicates and are unordered(internally unsorted)
+# output is sorted
+# slicing is not possble in sets
+print(set2)
+
+print(tuple1[2])
+print(list1[2])
+
+print(len(set2))
+
+disct = {"name":"Roopa", "age":25, "city":"Bangalore"}
+print(disct)
+print(disct["name"])
+
+for key in disct.keys():
+    print(key)  
+
+list1 = [1,2,3,4,5]
+tuple1 = (6,7,8,9,10)
+dict1= {"list":list1, "tuple":tuple1}
+
+print(dict1["list"][1])  #accessing list element inside dictionary
+print(dict1["tuple"][2])  #accessing tuple element inside dictionary
+
+list2 = list1[0:2:1]  #indexing not supported in list slicing
+
+for i in zip(list1, list2):  #zipping two iterables of different lengths, The shortest list wins.
+    print(i)
+
+
+
+list3 = [3,6,3,1,2,65,768,44,56,76,77,43]
+
+is_even = lambda x:x%2==0
+
+# list comprehension
+evenList = [i for i in list3 if is_even(i)]
