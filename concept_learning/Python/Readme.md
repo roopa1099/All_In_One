@@ -122,4 +122,5 @@ is often hard to analyze categorically.
 pd.cut() converts this into:
 
 20–30, 30–40, 40–50, 50–60, 60+
-62. 
+
+
